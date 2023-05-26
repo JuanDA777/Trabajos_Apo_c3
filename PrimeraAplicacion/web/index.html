@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Mi primera pagina</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background:#81ecec;
+            }
+            h1{
+                font-size: 50px;
+            }
+            p{
+              font-size: 30px;
+              color: red;
+            }
+            input{
+                font-size: 15px;
+                
+            }
+            td{
+                font-size: 20px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mi primera página web ft. Padilla</h1>
+        <p>Un ser humano fuerte es alguien que tiene la capacidad de enfrentar desafíos y superarlos con determinación y perseverancia. Es aquel que no se rinde frente a las dificultades, sino que las utiliza como oportunidades para crecer y aprender.</p>
+        <form>
+            <table>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="Text" required/></td>
+                    <td>Apellido</td>
+                    <td><input type="Text" required/></td>
+                </tr>
+                <tr>
+                    <td>Correo</td>
+                    <td><input type="email" required/></td>
+                    <td>Telefono</td>
+                    <td><input type="number" required/></td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td><input type="password" required/></td>
+                    <td>Verificar contraseña</td>
+                    <td><input type="password" required/></td>
+                </tr>
+                <tr>
+                    <td>gustos</td>
+                    <td colspan="3">
+                        <label for="Musica">Musica</label>
+                        <input type="checkbox" name="Musica" id="Musica" value="Musica"/>
+                        <label for="Peliculas">Peliculas</label>
+                        <input type="checkbox" name="Peliculas" id="Peliculas" value="Peliculas"/>
+                        <label for="Series">Series</label>
+                        <input type="checkbox" name="Series" id="Series" value="Series"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sexo</td>
+                    <td>
+                        <select>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">A veces</option>
+                        </select>
+                    </td>
+                    <td>Cumpleaños</td>
+                    <td><input type="date" ></input></td>
+                </tr>
+                <tr>
+                    <td>Nivel de pobreza</td>
+                    <td>
+                        <input type="range" name="range" id="range" min="1" max="10"/>
+                    </td>
+                    
+                </tr>
+            </table>    
+            <input type="submit" value="Click me"/>
+            <input type="reset"/>
+        </form>
+            
+    </body>
+</html>
